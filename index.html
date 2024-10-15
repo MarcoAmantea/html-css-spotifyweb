@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,7 +17,8 @@
         <!-- Header con logo spotify e upgrade -->
         <div class="header-1">
             <section class="logo">
-                <a href=""><img class="spotify-logo" src="./img/logo.svg" alt=""></a>
+                <a class="logo-spotify" href=""><img class="spotify-logo" src="./img/logo.svg" alt=""></a>
+                <a class="none" href=""><img src="./img/favicon.ico" alt=""></a>
             </section>
             <section class="header">
                 <a href=""><span class="upgrade">EFFETTUA L'UPGRADE</span></a>
@@ -26,10 +30,13 @@
             <nav class="navbar">
                 <div class="bar">
                     <ul>
-                        <li class="hover"><a href=""><img class="icons" src="./img/home.svg" alt="">Home</a></li>
-                        <li class="hover"><a href=""><img class="icons" src="./img/search.svg" alt="">Cerca</a></li>
-                        <li class="hover"><a href=""><img class="icons" src="./img/libreria.svg" alt="">La tua
-                                libreria</a></li>
+                        <li class="hover"><a href=""><img class="icons" src="./img/home.svg" alt=""><span
+                                    class="logo-spotify">Home</span></a></li>
+                        <li class="hover"><a href=""><img class="icons" src="./img/search.svg" alt=""><span
+                                    class="logo-spotify">Cerca</span></a></li>
+                        <li class="hover"><a href=""><img class="icons" src="./img/libreria.svg" alt=""><span
+                                    class="logo-spotify">La tua
+                                    libreria</span></a></li>
                     </ul>
                     <section>
                         <a href="">
@@ -56,7 +63,7 @@
                         <a href=""><span class="hover mg-bottom" style="display: inline-block;">Installa App</span></a>
                         <hr class="mg-bottom" style="width: 90%; display: inline-block;">
                         <img class="profile" src="./img/profile.svg" alt="">
-                        <a class="hover" href=""><strong>John Doe</strong></a>
+                        <strong class="hover">John Doe</strong>
                     </section>
                 </div>
             </nav>
@@ -272,6 +279,29 @@
 
         </div>
         <section class="footer">
+            <div class="mg-top-2 author">
+                <img style="margin-left: 20px; width: 40px;" src="./img/sinister.jpeg" alt="">
+                <span class="mg-left" style="color: white;">Sinister</span>
+                <a href="">
+                    <div class="hover-2 mg-left">Brano Nome</div>
+                </a>
+                <a class="hover mg-left mg-right" href=""><i class="fa-regular fa-heart"
+                        style="color: #6a6d71;"></i></a>
+                <a class="hover" href=""><i class="fa-regular fa-folder" style="color: #6d6d6f;"></i></a>
+            </div>
+            <div class="mg-top">
+                <a href=""><i class="fa-solid fa-shuffle mg-h" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-backward-step mg-h" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-regular fa-circle-play mg-h " style="color: #fcfcfc;"></i></a>
+                <a href=""><i class="fa-solid fa-backward-step fa-flip-horizontal mg-h" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-rotate-right mg-h" style="color: #ffffff;"></i></a>
+
+            </div>
+            <div class="mg-top">
+                <a href=""><i class="fa-solid fa-list mg-h" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-tv mg-h" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-volume-high mg-h" style="color: #ffffff;"></i></a>
+            </div>
 
         </section>
 </body>
