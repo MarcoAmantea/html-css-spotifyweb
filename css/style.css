@@ -25,15 +25,89 @@ img{
     border: 2px solid black;
 }
 .header{
-    width: 100%;
+    width: 85%;
     height: 10vh;
     border: 2px solid brown;
+    align-self: flex-end;
+    background-color:hsl(222deg 38.46% 5.1%) ;
+    position: relative;
 }
 .navbar{
     height: 80vh;
     width: 15%;
     border: 2px solid green;
+    overflow: auto;
+    background-color: black;
+    position: relative;
 }
 .main-1{
     display: flex;
+    position: relative;
+}
+.logo{
+    width: 15%;
+    height: 10vh;
+    border: 2px solid brown;
+    background-color: black;
+}
+.header-1{
+    display: flex;
+}
+.spotify-logo{
+    width: 60%;
+    margin: 10px 0 0 20px;
+}
+.upgrade{
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+.icons{
+    width: 30px;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.bar{
+    margin-left: 20px;
+    color: gray;
+}
+.plus{
+    background-color: gray;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.margin{
+    margin:20px 0
+}
+.mg-top{
+    margin-top: 20px;
+}
+.mg-bottom{
+    margin-bottom: 10px;
+}
+.hover:hover{
+    color: white;
+}
+.install{
+    width: 15px;
+}
+.profile{
+    background-color: gray;
+    border-radius: 50px;
+    width: 25px;
+}
+.profile-section{
+    position: absolute;
+    bottom: 0;
 }
