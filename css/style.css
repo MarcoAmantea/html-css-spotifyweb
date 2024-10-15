@@ -48,6 +48,7 @@ img {
     overflow: auto;
     background-color: black;
     position: relative;
+    font-size: 10px;
 }
 
 .main-1 {
@@ -63,6 +64,7 @@ img {
     height: 10vh;
     border: 2px solid brown;
     background-color: black;
+    position: relative;
 }
 
 .header-1 {
@@ -82,6 +84,9 @@ img {
     position: absolute;
     right: 0;
     margin-top: 10px;
+}
+.upgrade:hover{
+    background-color: green;
 }
 
 .icons {
@@ -176,13 +181,32 @@ li {
     margin-left: 20px;
 }
 
-@media screen and (max-width: 786px) {}
+@media screen and (max-width: 768px) {
+    .navbar{
+        font-size: 10px;
+    }
+    .upgrade{
+        padding: 5px 5px
+    }
+    .icons{
+        width: 20px;
+    }
+    .plus{
+        padding: 5px;
+    }
+    .crea{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .none {
         display: block;
         width: 20px;
-        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
     }
     .logo-spotify {
         display: none;
@@ -190,6 +214,7 @@ li {
 
     .icons {
         width: 20px;
+        margin: 0 auto;
     }
 
     .profile-section {
