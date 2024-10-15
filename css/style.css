@@ -104,10 +104,12 @@ li {
 }
 
 .bar {
-    margin-left: 20px;
+    
     color: gray;
 }
-
+.pad-left{
+    padding-left: 10px;
+}
 .plus {
     background-color: gray;
     color: black;
@@ -141,10 +143,11 @@ li {
 
 .hover:hover {
     color: white;
+    border-left: 2px solid hsl(83.68deg 81.2% 54.12%);
 }
 
 .install {
-    width: 15px;
+    width: 30px;
 }
 
 .profile {
@@ -206,7 +209,7 @@ li {
         width: 20px;
         position: absolute;
         bottom: 0;
-        left: 20px;
+        left: 10px;
     }
     .logo-spotify {
         display: none;
@@ -216,11 +219,9 @@ li {
         width: 20px;
         margin: 0 auto;
     }
-
-    .profile-section {
-        margin-top: 200px;
+    .install{
+        width: 30px;
     }
-
     hr {
         clear: both;
         border: 1px solid transparent;
