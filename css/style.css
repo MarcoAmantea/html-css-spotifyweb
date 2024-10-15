@@ -1,26 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     border: 2px solid red;
     display: flex;
     flex-direction: column;
 }
-.main{
+
+.main {
     width: 85%;
     height: 80vh;
     border: 2px solid blue;
     overflow: auto;
 }
-.footer{
+
+.footer {
     width: 100%;
     height: 10vh;
     border: 2px solid black;
@@ -28,15 +31,17 @@ img{
     display: flex;
     justify-content: space-between;
 }
-.header{
+
+.header {
     width: 85%;
     height: 10vh;
     border: 2px solid brown;
     align-self: flex-end;
-    background-color:hsl(222deg 38.46% 5.1%) ;
+    background-color: hsl(222deg 38.46% 5.1%);
     position: relative;
 }
-.navbar{
+
+.navbar {
     height: 80vh;
     width: 15%;
     border: 2px solid green;
@@ -44,24 +49,32 @@ img{
     background-color: black;
     position: relative;
 }
-.main-1{
+
+.main-1 {
     display: flex;
     position: relative;
 }
-.logo{
+.gray{
+    color: gray;
+}
+
+.logo {
     width: 15%;
     height: 10vh;
     border: 2px solid brown;
     background-color: black;
 }
-.header-1{
+
+.header-1 {
     display: flex;
 }
-.spotify-logo{
+
+.spotify-logo {
     width: 60%;
     margin: 10px 0 0 20px;
 }
-.upgrade{
+
+.upgrade {
     color: white;
     padding: 10px 40px;
     border: 1px solid white;
@@ -70,82 +83,138 @@ img{
     right: 0;
     margin-top: 10px;
 }
-.icons{
+
+.icons {
     width: 30px;
     margin-top: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-li{
+
+li {
     list-style: none;
 }
-.bar{
+
+.bar {
     margin-left: 20px;
     color: gray;
 }
-.plus{
+
+.plus {
     background-color: gray;
     color: black;
     padding: 5px 10px;
     display: inline-block;
 }
-.margin{
-    margin:20px 0
+
+.margin {
+    margin: 20px 0
 }
-.mg-top{
+
+.mg-top {
     margin-top: 20px;
 }
-.mg-top-2{
+
+.mg-top-2 {
     margin-top: 10px;
 }
-.mg-bottom{
+
+.mg-bottom {
     margin-bottom: 10px;
 }
-.mg-left{
+
+.mg-left {
     margin-left: 10px;
 }
-.mg-right{
+
+.mg-right {
     margin-right: 10px;
 }
-.hover:hover{
+
+.hover:hover {
     color: white;
 }
-.install{
+
+.install {
     width: 15px;
 }
-.profile{
+
+.profile {
     background-color: gray;
     border-radius: 50px;
     width: 25px;
 }
-.profile-section{
-margin-top: 40px;
+
+.profile-section {
+    margin-top: 40px;
+    position: absolute;
+    bottom:0;
 }
-.none{
+
+.none {
     display: none;
 }
-.mg-h{
+
+.mg-h {
     margin: 0 10px;
 }
-.hover-2:hover{
+
+.hover-2:hover {
     color: white;
     text-decoration: underline;
 }
-.author{
+
+.author {
     display: flex;
     align-items: center;
 }
-
-@media screen and (max-width: 786px){
-        
+.sinister{
+    width: 40px;
+    margin-left: 20px;
 }
+
+@media screen and (max-width: 786px) {}
+
 @media screen and (max-width: 425px) {
-    .none{
+    .none {
         display: block;
+        width: 20px;
+        margin: 0 auto;
     }
-    .logo-spotify{
+    .logo-spotify {
         display: none;
+    }
+
+    .icons {
+        width: 20px;
+    }
+
+    .profile-section {
+        margin-top: 200px;
+    }
+
+    hr {
+        clear: both;
+        border: 1px solid transparent;
+        height: 0px;
+    }
+    .profile{
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .song{
+        font-size: 10px;
+    }
+    .icons-footer{
+        font-size: 5px;
+    }
+    .sinister{
+        width: 20px;
+    }
+    .upgrade{
+        padding: 5px 5px;
     }
 }

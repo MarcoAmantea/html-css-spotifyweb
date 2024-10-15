@@ -31,23 +31,23 @@
                 <div class="bar">
                     <ul>
                         <li class="hover"><a href=""><img class="icons" src="./img/home.svg" alt=""><span
-                                    class="logo-spotify">Home</span></a></li>
+                                    class="logo-spotify mg-left">Home</span></a></li>
                         <li class="hover"><a href=""><img class="icons" src="./img/search.svg" alt=""><span
-                                    class="logo-spotify">Cerca</span></a></li>
+                                    class="logo-spotify mg-left">Cerca</span></a></li>
                         <li class="hover"><a href=""><img class="icons" src="./img/libreria.svg" alt=""><span
-                                    class="logo-spotify">La tua
+                                    class="logo-spotify mg-left">La tua
                                     libreria</span></a></li>
                     </ul>
-                    <section>
+                    <section class="logo-spotify">
                         <a href="">
                             <h4 class="hover mg-top hover">PLAYLIST</h4>
                         </a>
                         <div class="hover">
                             <a href=""><span class="plus margin hover">✚</span></a>
-                            <a href=""><span class="mg-bottom">CREA PLAYLIST</span></a>
+                            <a href=""><span class="mg-bottom mg-left">CREA PLAYLIST</span></a>
                         </div>
                     </section>
-                    <section>
+                    <section class="logo-spotify">
                         <ul>
                             <li class="hover mg-bottom"><a href="">Nome Playlist</a></li>
                             <li class="hover mg-bottom"><a href="">Nome Playlist</a></li>
@@ -60,10 +60,12 @@
                     </section>
                     <section class="profile-section">
                         <img class="install" src="./img/download.svg" alt="">
-                        <a href=""><span class="hover mg-bottom" style="display: inline-block;">Installa App</span></a>
-                        <hr class="mg-bottom" style="width: 90%; display: inline-block;">
-                        <img class="profile" src="./img/profile.svg" alt="">
-                        <strong class="hover">John Doe</strong>
+                        <a href=""><span class="hover mg-bottom logo-spotify">Installa App</span></a>
+                        <hr class="mg-bottom logo-spotify" style="width: 90%; display: inline-block;">
+                        <div class="author">
+                            <a href=""><img class="profile" src="./img/profile.svg" alt=""></a>
+                            <strong class="hover mg-left logo-spotify">John Doe</strong>
+                        </div>
                     </section>
                 </div>
             </nav>
@@ -279,17 +281,17 @@
 
         </div>
         <section class="footer">
-            <div class="mg-top-2 author">
-                <img style="margin-left: 20px; width: 40px;" src="./img/sinister.jpeg" alt="">
-                <span class="mg-left" style="color: white;">Sinister</span>
-                <a href="">
-                    <div class="hover-2 mg-left">Brano Nome</div>
-                </a>
-                <a class="hover mg-left mg-right" href=""><i class="fa-regular fa-heart"
-                        style="color: #6a6d71;"></i></a>
-                <a class="hover" href=""><i class="fa-regular fa-folder" style="color: #6d6d6f;"></i></a>
-            </div>
-            <div class="mg-top">
+            <section class="song icons-footer">
+                <div class="mg-top-2 author">
+                    <img class="sinister" src="./img/sinister.jpeg" alt="">
+                    <span class="mg-left" style="color: white;">Sinister <a href=""><br><span class="hover-2 gray">Brano
+                                Nome</span></a></span>
+                    <a class="hover mg-left mg-right" href=""><i class="fa-regular fa-heart"
+                            style="color: #6a6d71;"></i></a>
+                    <a class="hover" href=""><i class="fa-regular fa-folder" style="color: #6d6d6f;"></i></a>
+                </div>
+            </section>
+            <div class="mg-top icons-footer">
                 <a href=""><i class="fa-solid fa-shuffle mg-h" style="color: #ffffff;"></i></a>
                 <a href=""><i class="fa-solid fa-backward-step mg-h" style="color: #ffffff;"></i></a>
                 <a href=""><i class="fa-regular fa-circle-play mg-h " style="color: #fcfcfc;"></i></a>
@@ -297,7 +299,7 @@
                 <a href=""><i class="fa-solid fa-rotate-right mg-h" style="color: #ffffff;"></i></a>
 
             </div>
-            <div class="mg-top">
+            <div class="mg-top icons-footer">
                 <a href=""><i class="fa-solid fa-list mg-h" style="color: #ffffff;"></i></a>
                 <a href=""><i class="fa-solid fa-tv mg-h" style="color: #ffffff;"></i></a>
                 <a href=""><i class="fa-solid fa-volume-high mg-h" style="color: #ffffff;"></i></a>
