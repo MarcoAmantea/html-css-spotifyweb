@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -11,44 +12,52 @@ img {
 .container {
     width: 100%;
     height: 100vh;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
 }
-
+.none-disp{
+    display: none;
+}
 .main {
-    width: 85%;
+    width: calc(100% - 230px);
     height: 80vh;
     border: 2px solid blue;
     overflow: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .footer {
     width: 100%;
     height: 10vh;
-    border: 2px solid black;
     background-color: hsl(0deg 0% 15.69%);
     display: flex;
     justify-content: space-between;
 }
+.color{
+    color: white;
+    font-size: 10px;
+}
 
 .header {
-    width: 85%;
+    width: calc(100% - 230px);
     height: 10vh;
-    border: 2px solid brown;
     align-self: flex-end;
     background-color: hsl(222deg 38.46% 5.1%);
     position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .navbar {
-    height: 80vh;
-    width: 15%;
-    border: 2px solid green;
+    height: 90vh;
+    width: 230px;
     overflow: auto;
     background-color: black;
     position: relative;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .main-1 {
@@ -58,19 +67,9 @@ img {
 .gray{
     color: gray;
 }
-
-.logo {
-    width: 15%;
-    height: 10vh;
-    border: 2px solid brown;
-    background-color: black;
-    position: relative;
-}
-
 .header-1 {
     display: flex;
 }
-
 .spotify-logo {
     width: 60%;
     margin: 10px 0 0 20px;
@@ -104,11 +103,13 @@ li {
 }
 
 .bar {
-    
     color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .pad-left{
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .plus {
     background-color: gray;
@@ -145,6 +146,9 @@ li {
     color: white;
     border-left: 2px solid hsl(83.68deg 81.2% 54.12%);
 }
+.hover-3:hover{
+    color: white;
+}
 
 .install {
     width: 30px;
@@ -157,12 +161,10 @@ li {
 }
 
 .profile-section {
-    margin-top: 40px;
-    position: absolute;
-    bottom:0;
+    margin-top: 60px;
 }
 
-.none {
+.disp-none {
     display: none;
 }
 
@@ -183,11 +185,64 @@ li {
     width: 40px;
     margin-left: 20px;
 }
+.lector{
+    font-size: 5px;
+    padding: 0 200px;
+    background-color:hsl(0deg 0% 33.73%) ;
+    border-radius: 20px;
+    position: relative;
+}
+.inside-lector{
+    font-size: 5px;
+    padding: 0 50px;
+    background-color:hsl(0deg 0% 70.2%);
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.icons-footer{
+    text-align: center; 
+}
+.inside-lector:hover{
+    background-color: green;
+}
+.fa-circle-dot:hover{
+    width: 10px;
+}
+.inside-lector-2:hover{
+    background-color: green;
+}
+.fa-circle-play:hover{
+    font-size: 20px;
+}
+.lector-2{
+    font-size: 5px;
+    padding: 0 70px;
+    background-color:hsl(0deg 0% 33.73%) ;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+.inside-lector-2{
+    font-size: 5px;
+    padding: 0 20px;
+    background-color:hsl(0deg 0% 70.2%);
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.fa-circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 95%;
+}
 
 @media screen and (max-width: 768px) {
-    .navbar{
-        font-size: 10px;
-    }
     .upgrade{
         padding: 5px 5px
     }
@@ -197,39 +252,45 @@ li {
     .plus{
         padding: 5px;
     }
-    .crea{
-        font-size: 8px;
-        margin-left: 5px;
+    .lector{
+        padding: 0 100px;
+    }
+    .inside-lector{
+        padding: 0 25px;
+    }
+    .sinister{
+        font-size: 5px;
     }
 }
-
-@media screen and (max-width: 425px) {
-    .none {
+@media screen and (max-width: 768px) and (min-width:425px){
+    .disp-none {
         display: block;
         width: 20px;
-        position: absolute;
-        bottom: 0;
-        left: 10px;
+        margin-left: 20px;
     }
     .logo-spotify {
         display: none;
     }
-
+    .navbar{
+        width: 50px;
+    }
+    .main{
+        width: calc(100% - 50px);
+    }
+    .header{
+        width: calc(100% - 50px);
+    }
     .icons {
         width: 20px;
         margin: 0 auto;
     }
     .install{
-        width: 30px;
+        width: 40px;
     }
     hr {
         clear: both;
         border: 1px solid transparent;
         height: 0px;
-    }
-    .profile{
-        margin: 0 auto;
-        display: inline-block;
     }
     .song{
         font-size: 10px;
@@ -240,7 +301,70 @@ li {
     .sinister{
         width: 20px;
     }
-    .upgrade{
-        padding: 5px 5px;
+    .lector{
+        padding: 0 50px;
+    }
+    .inside-lector{
+     padding: 0 20px;
+    }
+    .profile-section{
+        align-self: ;
+    }
+    .lector-section{
+        font-size: 10px;
+    }
+    
+    
+}
+@media screen and (max-width: 425px) {
+    .none {
+        display: block;
+        width: 20px;
+        margin-left: 20px;
+    }
+    .logo-spotify {
+        display: none;
+    }
+    .navbar{
+        width: 50px;
+    }
+    .main{
+        width: calc(100% - 50px);
+    }
+    .header{
+        width: calc(100% - 50px);
+    }
+    .icons {
+        width: 20px;
+        margin: 0 auto;
+    }
+    .install{
+        width: 40px;
+    }
+    hr {
+        clear: both;
+        border: 1px solid transparent;
+        height: 0px;
+    }
+    .song{
+        font-size: 10px;
+    }
+    .icons-footer{
+        font-size: 5px;
+    }
+    .sinister{
+        width: 20px;
+    }
+    .lector{
+        padding: 0 50px;
+    }
+    .inside-lector{
+     padding: 0 20px;
+    }
+    .profile-section{
+        align-self: ;
+    }
+    .lector-section{
+        font-size: 10px;
     }
 }
