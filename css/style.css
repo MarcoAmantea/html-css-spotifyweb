@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -18,10 +18,13 @@ img {
 .none-disp{
     display: none;
 }
+.center{
+    text-align: center;
+}
 .main {
     width: calc(100% - 230px);
     height: 80vh;
-    border: 2px solid blue;
+    background-color: hsl(218.57deg 25.93% 10.59%);
     overflow: auto;
     position: absolute;
     bottom: 0;
@@ -54,10 +57,13 @@ img {
 .navbar {
     height: 90vh;
     width: 230px;
-    overflow: auto;
     background-color: black;
-    position: relative;
     font-size: 15px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
 }
 
 .main-1 {
@@ -65,7 +71,10 @@ img {
     position: relative;
 }
 .gray{
-    color: gray;
+    color:hsl(222.86deg 2.77% 49.61%) ;
+}
+.white{
+    color: white;
 }
 .header-1 {
     display: flex;
@@ -102,12 +111,6 @@ li {
     list-style: none;
 }
 
-.bar {
-    color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .pad-left{
     padding-left: 20px;
 }
@@ -161,7 +164,10 @@ li {
 }
 
 .profile-section {
-    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
 }
 
 .disp-none {
@@ -208,13 +214,21 @@ li {
 .inside-lector:hover{
     background-color: green;
 }
-.fa-circle-dot:hover{
+.fa-circle-dot{
+    display: none;
+}
+.inside-lector:hover .fa-circle-dot{
+    display: block;
     width: 10px;
 }
 .inside-lector-2:hover{
     background-color: green;
 }
-.fa-circle-play:hover{
+.inside-lector-2:hover .fa-circle-dot{
+    display: block;
+    width: 10px;
+}
+.play:hover{
     font-size: 20px;
 }
 .lector-2{
@@ -241,6 +255,56 @@ li {
     top: 0;
     margin-left: 95%;
 }
+.main-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: gray;
+    margin-top: 20px;
+}
+.playlist{
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: calc(100% / 6);
+    padding: 20px;
+}
+.play-start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    display: none;
+}
+.play-start:hover{
+    font-size: 80px;
+}
+
+.card{
+    position: relative;
+}
+.card:hover .play-start{
+    display: block;
+}
+.card:hover .img-play{
+    background-color: black;
+}
+.line {
+	width: 50px;
+    height: 3px;
+    background: hsl(83.65deg 100% 59.22%);
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+.gray:hover .line{
+    display: block;
+}
 
 @media screen and (max-width: 768px) {
     .upgrade{
@@ -261,8 +325,51 @@ li {
     .sinister{
         font-size: 5px;
     }
+    .col{
+        width: calc(100% / 4);
+    }
 }
 @media screen and (max-width: 768px) and (min-width:425px){
+    .icons {
+        width: 20px;
+        margin: 0 auto;
+    }
+    .install{
+        width: 40px;
+    }
+    hr {
+        clear: both;
+        border: 1px solid transparent;
+        height: 0px;
+    }
+    .song{
+        font-size: 10px;
+    }
+    .icons-footer{
+        font-size: 10px;
+    }
+    .sinister{
+        width: 20px;
+    }
+    .lector{
+        padding: 0 50px;
+    }
+    .inside-lector{
+     padding: 0 20px;
+    }
+    .profile-section{
+        align-self: ;
+    }
+    .lector-section{
+        font-size: 10px;
+    }
+    .main-list{
+        flex-wrap: wrap;
+    }
+    
+    
+}
+@media screen and (max-width: 425px) {
     .disp-none {
         display: block;
         width: 20px;
@@ -313,58 +420,10 @@ li {
     .lector-section{
         font-size: 10px;
     }
-    
-    
-}
-@media screen and (max-width: 425px) {
-    .none {
-        display: block;
-        width: 20px;
-        margin-left: 20px;
+    .col{
+        width: calc(100% / 2);
     }
-    .logo-spotify {
-        display: none;
-    }
-    .navbar{
-        width: 50px;
-    }
-    .main{
-        width: calc(100% - 50px);
-    }
-    .header{
-        width: calc(100% - 50px);
-    }
-    .icons {
-        width: 20px;
-        margin: 0 auto;
-    }
-    .install{
-        width: 40px;
-    }
-    hr {
-        clear: both;
-        border: 1px solid transparent;
-        height: 0px;
-    }
-    .song{
-        font-size: 10px;
-    }
-    .icons-footer{
-        font-size: 5px;
-    }
-    .sinister{
-        width: 20px;
-    }
-    .lector{
-        padding: 0 50px;
-    }
-    .inside-lector{
-     padding: 0 20px;
-    }
-    .profile-section{
-        align-self: ;
-    }
-    .lector-section{
-        font-size: 10px;
+    .main-list{
+        flex-wrap: wrap;
     }
 }
