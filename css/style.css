@@ -1,108 +1,13 @@
+/* default */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-
 img {
     max-width: 100%;
 }
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.none-disp{
-    display: none;
-}
-.center{
-    text-align: center;
-}
-.main {
-    width: calc(100% - 230px);
-    height: 80vh;
-    background-color: hsl(218.57deg 25.93% 10.59%);
-    overflow: auto;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.footer {
-    width: 100%;
-    height: 10vh;
-    background-color: hsl(0deg 0% 15.69%);
-    display: flex;
-    justify-content: space-between;
-}
-.color{
-    color: white;
-    font-size: 10px;
-}
-
-.header {
-    width: calc(100% - 230px);
-    height: 10vh;
-    align-self: flex-end;
-    background-color: hsl(222deg 38.46% 5.1%);
-    position: relative;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.navbar {
-    height: 90vh;
-    width: 230px;
-    background-color: black;
-    font-size: 15px;
-    color: gray;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: auto;
-}
-
-.main-1 {
-    display: flex;
-    position: relative;
-}
-.gray{
-    color:hsl(222.86deg 2.77% 49.61%) ;
-    font-size: 15px;
-}
-.white{
-    color: white;
-}
-.header-1 {
-    display: flex;
-}
-.spotify-logo {
-    width: 60%;
-    margin: 10px 0 0 20px;
-}
-
-.upgrade {
-    color: white;
-    padding: 10px 40px;
-    border: 1px solid white;
-    border-radius: 20px;
-    position: absolute;
-    right: 0;
-    margin-top: 10px;
-}
-.upgrade:hover{
-    background-color: green;
-    padding: 10px 50px;
-}
-
-.icons {
-    width: 30px;
-    margin-top: 10px;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -112,16 +17,25 @@ li {
     list-style: none;
 }
 
+
+/* Utilities */
+.center{
+    text-align: center;
+}
+.color{
+    color: white;
+    font-size: 10px;
+}
+.gray{
+    color:hsl(222.86deg 2.77% 49.61%) ;
+    font-size: 15px;
+}
+.white{
+    color: white;
+}
 .pad-left{
     padding-left: 20px;
 }
-.plus {
-    background-color: gray;
-    color: black;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
 .margin {
     margin: 20px 0
 }
@@ -144,6 +58,105 @@ li {
 
 .mg-right {
     margin-right: 10px;
+}
+.mg-h {
+    margin: 0 5px;
+}
+.left{
+    text-align: left;
+}
+.disp-none {
+    display: none;
+}
+.f-size{
+    font-size: 10px;
+}
+
+
+/* Container e sezioni interne */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-1 {
+    display: flex;
+    position: relative;
+}
+.header {
+    width: calc(100% - 230px);
+    height: 10vh;
+    align-self: flex-end;
+    background-color: hsl(222deg 38.46% 5.1%);
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar {
+    height: 90vh;
+    width: 230px;
+    background-color: black;
+    font-size: 15px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+}
+.main {
+    width: calc(100% - 230px);
+    height: 80vh;
+    background-color: hsl(218.57deg 25.93% 10.59%);
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: hsl(0deg 0% 15.69%);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Logo Spotify */
+.spotify-logo {
+    width: 60%;
+    margin: 10px 0 0 20px;
+}
+
+
+/* Sezione Header */
+.upgrade {
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+.upgrade:hover{
+    background-color: green;
+    padding: 10px 50px;
+}
+
+
+/* Sezione Navbar */
+.icons {
+    width: 30px;
+    margin-top: 10px;
+}
+.plus {
+    background-color: gray;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-left: 20px
 }
 .home{
     border-left: 5px solid hsl(83.68deg 81.2% 54.12%);
@@ -170,100 +183,12 @@ li {
 }
 
 .profile-section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 50px;
     
 }
 
-.disp-none {
-    display: none;
-}
 
-.mg-h {
-    margin: 0 10px;
-}
-.left{
-    text-align: left;
-}
-.hover-2:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.author {
-    display: flex;
-    align-items: center;
-}
-.sinister{
-    width: 40px;
-    margin-left: 20px;
-}
-.lector{
-    font-size: 5px;
-    padding: 0 200px;
-    background-color:hsl(0deg 0% 33.73%) ;
-    border-radius: 20px;
-    position: relative;
-}
-.inside-lector{
-    font-size: 5px;
-    padding: 0 50px;
-    background-color:hsl(0deg 0% 70.2%);
-    height: 100%;
-    border-radius: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.icons-footer{
-    text-align: center; 
-    font-size: 20px;
-}
-.inside-lector:hover{
-    background-color: green;
-}
-.fa-circle-dot{
-    display: none;
-}
-.inside-lector:hover .fa-circle-dot{
-    display: block;
-    width: 10px;
-}
-.inside-lector-2:hover{
-    background-color: green;
-}
-.inside-lector-2:hover .fa-circle-dot{
-    display: block;
-    width: 10px;
-}
-.play:hover{
-    font-size: 25px;
-}
-.lector-2{
-    font-size: 5px;
-    padding: 0 50px;
-    background-color:hsl(0deg 0% 33.73%) ;
-    border-radius: 20px;
-    position: relative;
-    margin-right: 10px;
-}
-.inside-lector-2{
-    font-size: 5px;
-    padding: 0 20px;
-    background-color:hsl(0deg 0% 70.2%);
-    height: 100%;
-    border-radius: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.fa-circle-dot{
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-left: 95%;
-}
+/* Sezione Main */
 .main-list{
     display: flex;
     justify-content: center;
@@ -300,9 +225,6 @@ li {
 .card:hover .play-start{
     display: block;
 }
-.card:hover .img-play{
-    background-color: black;
-}
 .line-1{
     width: 50px;
     height: 3px;
@@ -321,6 +243,10 @@ li {
 .gray:hover .line{
     display: block;
 }
+.card {
+    transition: opacity 0.3s ease;
+  }
+
 .card:hover {
     opacity: 0.7;
   }
@@ -328,6 +254,93 @@ li {
     display: none;
 }
 
+
+/* Sezione Footer */
+.hover-2:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+.sinister{
+    width: 40px;
+    margin-left: 20px;
+}
+.lector{
+    font-size: 3px;
+    padding: 0 200px;
+    background-color:hsl(0deg 0% 33.73%) ;
+    border-radius: 20px;
+    position: relative;
+}
+.inside-lector{
+    font-size: 3px;
+    padding: 0 50px;
+    background-color:hsl(0deg 0% 70.2%);
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.icons-footer{
+    text-align: center; 
+    font-size: 10px;
+}
+.lector:hover .inside-lector{
+    background-color: green;
+}
+.fa-circle-dot{
+    display: none;
+}
+.lector:hover .fa-circle-dot{
+    display: block;
+}
+.lector-2:hover .fa-circle-dot{
+    display: block;
+}
+.lector-2:hover .inside-lector-2{
+    background-color: green;
+}
+.play{
+    font-size: 20px;
+}
+.play:hover{
+    font-size: 25px;
+}
+.lector-2{
+    font-size: 3px;
+    padding: 0 50px;
+    background-color:hsl(0deg 0% 33.73%) ;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+.inside-lector-2{
+    font-size: 3px;
+    padding: 0 20px;
+    background-color:hsl(0deg 0% 70.2%);
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.fa-circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 95%;
+}
+
+
+
+/* MEDIA QUERY */
+
+/* TABLET */
 @media screen and (max-width: 768px) {
     .upgrade{
         padding: 5px 5px
@@ -356,8 +369,8 @@ li {
 
 }
     
-
-@media screen and (max-width: 426px) {
+/* MOBILE */
+@media screen and (max-width: 552px) {
     .disp-none {
         display: block;
         width: 20px;
@@ -417,9 +430,7 @@ li {
     .home{
         border: none;
     }
-    .mg-h{
-        margin: 0 0;
-    }   
+    
     .lector-2{
         padding: 0 10px;
     }
@@ -429,7 +440,8 @@ li {
     footer{
         justify-content: space-evenly;
     }
-    .punto{
-        display: block;
+    .profile-section{
+        position: absolute;
+        bottom: 0;
     }
 }
