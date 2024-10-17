@@ -253,7 +253,9 @@ li {
 .punto{
     display: none;
 }
-
+.b-radius{
+    border-radius: 50%;
+}
 
 /* Sezione Footer */
 .hover-2:hover {
