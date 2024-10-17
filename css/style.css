@@ -429,9 +429,7 @@ li {
     .main-list{
         flex-wrap: wrap;
     }
-    .fa-heart, .fa-folder{
-        display: n;
-    }
+
     .home{
         border: none;
     }
