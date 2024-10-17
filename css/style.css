@@ -269,6 +269,9 @@ li {
     width: 40px;
     margin-left: 20px;
 }
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
+}
 .lector{
     font-size: 3px;
     padding: 0 200px;
