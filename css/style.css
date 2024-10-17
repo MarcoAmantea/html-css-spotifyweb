@@ -428,7 +428,7 @@ li {
         flex-wrap: wrap;
     }
     .fa-heart, .fa-folder{
-        display: none;
+        display: n;
     }
     .home{
         border: none;
